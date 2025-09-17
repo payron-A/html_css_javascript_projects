@@ -10,7 +10,7 @@
     --black: #1a1a1a;
     --surface: #2a2a2a;
     --surface2: #333;
-    --text: #f0f0f0;
+    --white: #e2dede;
     --muted: #888;
     --border: rgba(255, 255, 255, 0.08);
     --sidebar-w: 50px;
@@ -18,15 +18,20 @@
     --font-head: 'Space Grotesk', sans-serif;
 }
 
+::selection {
+    color: var(--black);
+    background: var(--green-dim);
+}
+
 body {
     font-family: var(--font-body);
     background: var(--black);
-    color: var(--text);
+    color: var(--white);
     min-height: 100vh;
     overflow-x: hidden;
 }
 
-/* ── SIDEBAR ── */
+/* === SIDEBAR ===*/
 .sidebar {
     position: fixed;
     top: 0;
@@ -127,7 +132,6 @@ body {
 
 .nb-link .dot {
     width: 20px;
-    /* height: 40px; */
     aspect-ratio: 1/1;
     border-radius: 50%;
     background: var(--black);
@@ -157,7 +161,7 @@ body {
     opacity: 1;
 }
 
-/* ── MAIN ── */
+/* == MAIN == */
 .main {
     margin-left: var(--sidebar-w);
     min-height: 100vh;
@@ -166,13 +170,13 @@ body {
     padding: 0 32px 100px;
 }
 
-/* ── TOPBAR ── */
+/* === TOPBAR === */
 .topbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 24px 0 8px;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--green);
     margin-bottom: 28px;
     position: sticky;
     top: 0;
@@ -184,7 +188,6 @@ body {
     font-family: var(--font-head);
     font-size: 22px;
     font-weight: 700;
-    color: var(--text);
 }
 
 .topbar-left p {
@@ -215,7 +218,7 @@ body {
     font-size: 14px;
 }
 
-/* ── NOTES GRID ── */
+/* === NOTES GRID === */
 .notes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -278,7 +281,7 @@ body {
     font-family: var(--font-head);
     font-size: 15px;
     font-weight: 600;
-    color: var(--text);
+    color: var(--white);
 }
 
 .note-preview {
@@ -328,7 +331,7 @@ body {
     color: #c90000;
 }
 
-/* ── FAB ── */
+/* ==== add note button ==== */
 .fab {
     position: fixed;
     bottom: 24px;
@@ -349,8 +352,7 @@ body {
     box-shadow: 0 0 4px var(--green);
 }
 
-
-/* ── RESPONSIVE ── */
+/* ==== RESPONSIVE ==== */
 @media (max-width: 600px) {
     .main {
         padding: 0 16px 100px;
@@ -363,4 +365,73 @@ body {
     .notes-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.note-modal,
+.notebook-modal {
+    background: #2a2a2a;
+    padding: 24px;
+    border-radius: 16px;
+    width: 320px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    color: white;
+}
+
+/* === inputs ==== */
+.input {
+    background: #333;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #89E900;
+}
+
+/* ==== textarea ==== */
+.textarea {
+    min-height: 80px;
+    resize: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cancel {
+    background: #444;
+    color: white;
+}
+
+.save {
+    background: #89E900;
+    color: black;
+    font-weight: bold;
 }

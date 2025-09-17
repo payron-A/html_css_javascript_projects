@@ -26,95 +26,48 @@
                     New Notebook
                 </div>
                 <div id="nb-list">
-                    <div class="nb-link">
-                        <span class="dot"></span>
-                        <span class="nb-name">java script</span>
-                        <i class="fa-solid fa-xmark nb-del"></i>
-                    </div>
-                    <div class="nb-link">
-                        <span class="dot"></span>
-                        <span class="nb-name">c / c++</span>
-                        <i class="fa-solid fa-xmark nb-del"></i>
-                    </div>
-                    <div class="nb-link">
-                        <span class="dot"></span>
-                        <span class="nb-name">hello</span>
-                        <i class="fa-solid fa-xmark nb-del"></i>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
-
     <div class="main">
         <div class="topbar">
             <div class="topbar-left">
-                <h1 id="greeting">Good morning ✦</h1>
+                <h1 id="greeting">Good Evening</h1>
             </div>
             <div class="theme-toggle" id="themeBtn">
-                <i class="fa-solid fa-sun" id="theme-icon"></i>
-                <span id="theme-label">Light</span>
+                <i id="theme-icon"></i>
+                <span id="theme-label"></span>
             </div>
         </div>
-
-        <div class="notes-grid" id="notes-grid">
-            <div class="note-card">
-                <span class="note-tag">css && html</span>
-                <div class="note-title">note</div>
-                <div class="note-preview">
-                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
-                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
-                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
-                </div>
-                <div class="note-footer">
-                    <span class="note-date">23/03/2002</span>
-                    <div class="note-actions">
-                        <i class="fa-solid fa-pen" title="Edit"></i>
-                        <i class="fa-solid fa-trash" title="Delete"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="note-card">
-                <span class="note-tag">css && html</span>
-                <div class="note-title">note</div>
-                <div class="note-preview">
-                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
-                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
-                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
-                </div>
-                <div class="note-footer">
-                    <span class="note-date">23/03/2002</span>
-                    <div class="note-actions">
-                        <i class="fa-solid fa-pen" title="Edit"></i>
-                        <i class="fa-solid fa-trash" title="Delete"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="note-card">
-                <span class="note-tag">css && html</span>
-                <div class="note-title">note</div>
-                <div class="note-preview">
-                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
-                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
-                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
-                </div>
-                <div class="note-footer">
-                    <span class="note-date">23/03/2002</span>
-                    <div class="note-actions">
-                        <i class="fa-solid fa-pen" title="Edit"></i>
-                        <i class="fa-solid fa-trash" title="Delete"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="notes-grid" id="notes-grid"></div>
     </div>
-
     <div class="fab" title="new note">
         <i class="fa-solid fa-plus"></i>
     </div>
-
+    <!-- input of notes -->
+    <div class="overlay">
+        <div class="note-modal">
+            <h2>New Note</h2>
+            <input type="text" placeholder="Tag (e.g. Study)" class="input" id="tag-ipt">
+            <input type="text" placeholder="Title" class="input" id="title-ipt">
+            <textarea placeholder="Preview..." class="input textarea" id="preview-ipt"></textarea>
+            <div class="actions">
+                <button class="btn cancel">Cancel</button>
+                <button class="btn save">Save</button>
+            </div>
+        </div>
+        <!-- input of notebooks -->
+        <div class="notebook-modal">
+            <h2>New Notebook</h2>
+            <input type="text" placeholder="notebook name " class="input" id="nb-ipt">
+            <div class="actions">
+                <button class="btn cancel">Cancel</button>
+                <button class="btn save">Save</button>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
-
 </html>
+</body>
