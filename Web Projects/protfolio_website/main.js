@@ -23,3 +23,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     }
 })
+// =========== show hidden text ==========
+function showText(){
+    const hiddeText = document.querySelector(".hidde-text");
+    const readBtn = document.querySelector(".read-btn");
+    const readIcon = document.querySelector(".read-btn i");
+    readBtn.onclick =()=>{
+        readBtn.classList.toggle('down')
+        hiddeText.classList.toggle('hidde')
+        readIcon.classList.toggle('rotate')
+    }
+}showText()
