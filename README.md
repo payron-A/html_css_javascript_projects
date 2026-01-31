@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:FF0000,100:000000&height=200&section=header&text=𝕻𝖆𝖞𝖗𝖔𝖓&fontSize=90&fontColor=000000&animation=twinkling&fontAlignY=35" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:FF0000,100:000000&height=200&section=header&text=𝖍𝖙𝖒𝖑,𝖈𝖘𝖘,𝖏𝖆𝖛𝖆𝖘𝖈𝖗𝖎𝖕𝖙-𝕻𝖗𝖔𝖏𝖊𝖈𝖙𝖘&fontSize=60&fontColor=000000&animation=twinkling&fontAlignY=35" />
 </div>
 <br/>
 <br/>
