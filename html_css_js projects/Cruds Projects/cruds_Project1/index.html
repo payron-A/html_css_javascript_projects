@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Curds Project 1 </title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="home">
+            <nav class="navbar">
+                <div class="logo">
+                    <img class="img_logo" src="Payron_red.png" alt="">
+                    <a href="#home">PAYRON</a>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a id="ThemeIcon" class="fa-solid fa-sun"><span></span></a></li>
+                    <li><a href="https://t.me/Payron_A" target="_blank">Contact Me</a></li>
+                    <button class="cta-button"><a href="https://github.com/payron-A"><i
+                                class="fa-brands fa-github"></i>My
+                            GitHub</a></button>
+                </ul>
+                <div class="bars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <div class="header_content">
+                <h1>New Curds Project</h1>
+                <p>create | update | read | delete | search </p>
+            </div>
+        </header>
+        <section class="inputs">
+            <h2> Creat user account </h2>
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Eamil">
+            <button id="createBtn">Create account</button>
+            <p id="error_message"></p>
+        </section>
+        <section class="search_deleteAll">
+            <i class="fa-solid fa-trash " id="deleteAllIcon"></i>
+            <input type="text" class="searchIpt" placeholder="Search for user">
+        </section>
+        <section class="outputs">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <!-- javascript fill -->
+    <script src="main.js"></script>
+</body>
+
+</html>
