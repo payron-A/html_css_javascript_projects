@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --red: rgb(212, 11, 11);
+    --green: rgba(2, 138, 47, 0.658);
+    --white: rgba(216, 215, 215, 0.93);
+    --black: rgb(17, 17, 17);
+    --glass: rgba(255, 255, 255, 0.233);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
