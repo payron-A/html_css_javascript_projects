@@ -1,0 +1,66 @@
+:root {
+    --yellow: #d49e0b;
+    --orange: #923b01;
+    --white: #d8d7d7ed;
+    --black: #111111;
+    --glass: #ffffff3b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: "Molle", cursive;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--orange), var(--yellow));
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+}
+
+header {
+    width: 400px;
+    padding-top: 20px;
+    background-color: var(--glass);
+    text-align: center;
+    height: 100px;
+    font-size: 50px;
+    border-radius: 10px;
+}
+
+header .player {
+    color: var(--orange);
+    font-size: 60px;
+
+}
+
+.gameBoard {
+    width: 400px;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.gameBoard .squar {
+    border-radius: 8px;
+    background-color: var(--glass);
+    font-size: 80px;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gameBoard .squar:hover {
+    background-color: #c7c6c646;
+}
