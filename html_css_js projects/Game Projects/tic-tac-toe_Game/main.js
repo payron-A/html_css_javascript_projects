@@ -1,81 +1,73 @@
 let turn = 'x';
 let squars = [];
+let moves = 0;
 let gameOver = false;
-let evenCount = 1;
+let header = document.getElementsByTagName("header")[0];
+let allSquares = document.querySelectorAll(".squar");
 
-let header = document.getElementsByTagName("header")[0]
-function fillSquars(id) {
-    if (gameOver || evenCount > 9) {
-        return;
+
+allSquares.forEach((squar, index) => {
+    squar.addEventListener("click", () => {
+        if (!squar.textContent && !gameOver) {
+            squar.textContent = turn;
+            squars[index] = turn;
+            moves++;
+            turn = turn == 'x' ? 'o' : 'x';
+            header.textContent = turn.toUpperCase();
+        } else {
+            return;
+        }
+        checkWinner();
+        if (moves == 9 && !gameOver) {
+            drow()
+        }
+    });
+
+
+
+});
+
+function checkWinner() {
+    const wineCondition = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6],
+    ];
+    for (let cambo of wineCondition) {
+        const [num1, num2, num3] = cambo;
+        if (squars[num1] == squars[num2] && squars[num2] == squars[num3] && squars[num1]) {
+            win(num1, num2, num3);
+        }
     }
-    let squar = document.getElementById(id)
-    if (turn == 'x' && !squar.textContent) {
-        squar.textContent = 'x';
-        header.textContent = 'O'
-        turn = 'o'
-    } else if (turn == 'o' && !squar.textContent) {
-        squar.textContent = 'o';
-        header.textContent = 'X'
-        turn = 'x'
-    }
-    evenCount += 1;
-    isWinner()
+
 }
 
-function wine(num1, num2, num3) {
-    document.getElementById('squar' + num1).style.background = 'var(--yellow)';
-    document.getElementById('squar' + num2).style.background = 'var(--yellow)';
-    document.getElementById('squar' + num3).style.background = 'var(--yellow)';
-    header.textContent = squars[1].toUpperCase() + ' wine';
+function win(num1, num2, num3) {
+
+    [num1, num2, num3].forEach(num => {
+        document.getElementById("squar" + num).style.background = 'var(--yellow)';
+    })
+    header.textContent = `${squars[num1].toUpperCase()} win`;
     setInterval(() => {
         header.textContent += '.'
     }, 1000)
     setTimeout(() => {
-        location.reload()
-    }, 3500)
+        location.reload();
+    }, 3500);
     gameOver = true;
+
 }
-function even() {
-    header.textContent = 'even';
+function drow() {
+    const newLocal = header.textContent = 'Drow';
+    setTimeout(() => {
+        location.reload();
+    }, 3500);
     setInterval(() => {
         header.textContent += '.'
     }, 1000)
-    setTimeout(() => {
-        location.reload()
-    }, 3500)
-    gameOver = true;
-}
-
-
-function isWinner() {
-    for (let i = 1; i < 10; i++) {
-        squars[i] = document.getElementById('squar' + i).textContent;
-    }
-    if (squars[1] == squars[2] && squars[2] == squars[3] && squars[1] != "") {
-        wine(1, 2, 3)
-    }
-    if (squars[4] == squars[5] && squars[5] == squars[6] && squars[4] != "") {
-        wine(4, 5, 6)
-    }
-    if (squars[7] == squars[8] && squars[8] == squars[9] && squars[9] != "") {
-        wine(7, 9, 8)
-    }
-    if (squars[1] == squars[4] && squars[1] == squars[7] && squars[7] != "") {
-        wine(1, 7, 4)
-    }
-    if (squars[2] == squars[5] && squars[8] == squars[2] && squars[8] != "") {
-        wine(2, 5, 8)
-    }
-    if (squars[9] == squars[3] && squars[3] == squars[6] && squars[6] != "") {
-        wine(9, 3, 6)
-    }
-    if (squars[1] == squars[5] && squars[5] == squars[9] && squars[9] != "") {
-        wine(1, 5, 9)
-    }
-    if (squars[5] == squars[7] && squars[7] == squars[3] && squars[3] != "") {
-        wine(5, 7, 3)
-    }
-    if (evenCount > 9 && !gameOver) {
-        even()
-    }
 }
