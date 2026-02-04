@@ -13,7 +13,8 @@
 }
 
 .container {
-    font-family: "Molle", cursive;
+    font-family: "Permanent Marker", cursive;
+    ;
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(to right, var(--orange), var(--yellow));
@@ -29,7 +30,6 @@
 
 header {
     width: 400px;
-    padding-top: 20px;
     background-color: var(--glass);
     text-align: center;
     height: 100px;
