@@ -4,12 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- style link -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
     <title>notekeeper</title>
 </head>
 
 <body>
+
+    <div class="sidebar">
+        <div class="sidebar-inner">
+            <div class="logo">
+                <i class="fa-solid fa-pen-nib"></i>
+                notekeeper
+            </div>
+            <div class="nb-section">
+                <div class="nb-add-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    New Notebook
+                </div>
+                <div id="nb-list">
+                    <div class="nb-link">
+                        <span class="dot"></span>
+                        <span class="nb-name">java script</span>
+                        <i class="fa-solid fa-xmark nb-del"></i>
+                    </div>
+                    <div class="nb-link">
+                        <span class="dot"></span>
+                        <span class="nb-name">c / c++</span>
+                        <i class="fa-solid fa-xmark nb-del"></i>
+                    </div>
+                    <div class="nb-link">
+                        <span class="dot"></span>
+                        <span class="nb-name">hello</span>
+                        <i class="fa-solid fa-xmark nb-del"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="topbar-left">
+                <h1 id="greeting">Good morning ✦</h1>
+            </div>
+            <div class="theme-toggle" id="themeBtn">
+                <i class="fa-solid fa-sun" id="theme-icon"></i>
+                <span id="theme-label">Light</span>
+            </div>
+        </div>
+
+        <div class="notes-grid" id="notes-grid">
+            <div class="note-card">
+                <span class="note-tag">css && html</span>
+                <div class="note-title">note</div>
+                <div class="note-preview">
+                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
+                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
+                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
+                </div>
+                <div class="note-footer">
+                    <span class="note-date">23/03/2002</span>
+                    <div class="note-actions">
+                        <i class="fa-solid fa-pen" title="Edit"></i>
+                        <i class="fa-solid fa-trash" title="Delete"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="note-card">
+                <span class="note-tag">css && html</span>
+                <div class="note-title">note</div>
+                <div class="note-preview">
+                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
+                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
+                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
+                </div>
+                <div class="note-footer">
+                    <span class="note-date">23/03/2002</span>
+                    <div class="note-actions">
+                        <i class="fa-solid fa-pen" title="Edit"></i>
+                        <i class="fa-solid fa-trash" title="Delete"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="note-card">
+                <span class="note-tag">css && html</span>
+                <div class="note-title">note</div>
+                <div class="note-preview">
+                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
+                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
+                    flkjfl flajlj fkjekjf kjeoo fhfka flkvlkml flejjei l alflj
+                </div>
+                <div class="note-footer">
+                    <span class="note-date">23/03/2002</span>
+                    <div class="note-actions">
+                        <i class="fa-solid fa-pen" title="Edit"></i>
+                        <i class="fa-solid fa-trash" title="Delete"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fab" title="new note">
+        <i class="fa-solid fa-plus"></i>
+    </div>
 
     <script src="main.js"></script>
 </body>
