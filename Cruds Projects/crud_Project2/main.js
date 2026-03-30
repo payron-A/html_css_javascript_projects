@@ -61,7 +61,7 @@ const nbList = getId("nb-list");
 const nbIpt = getId("nb-ipt");
 
 //=== DATA ===
-let notebooks =JSON.parse(localStorage.notebooks) || [];
+let notebooks =JSON.parse(localStorage.getItem('notebooks')) || [];
 localStorage.notebooks = JSON.stringify(notebooks);
 let currentNotebook = null;
 
@@ -80,17 +80,29 @@ addnotebookBtn.onclick = () => {
     overlay.style.display = 'flex';
     notebookmodal.style.display = 'flex';
 }
+// open note modal
+fab.onclick = () => {
+    if (!currentNotebook) {
+        alert("select the notebooks first!");
+        return;
+    }
+
+    overlay.style.display = 'flex';
+    notemodal.style.display = 'flex';
+}
+
 document.querySelectorAll('.cancel').forEach(btn => {
     btn.onclick = cancelAll;
 });
-
 document.querySelectorAll('.save').forEach(btn => {
     btn.onclick = save;
 });
 //=== SAVE FUNCTION ===
 function save() {
-//save notebook
+    //save notebook
     if (notebookmodal.style.display === 'flex') {
+        
+        if(nbIpt.value.trim() == ''){return} // check if the notebook input is empty 
         let notebook = {
             name: nbIpt.value.trim(),
             notes: []
@@ -99,9 +111,9 @@ function save() {
         notebooks.push(notebook);
         showNB();
     }
-//save note 
+    //save note 
     if (notemodal.style.display === 'flex') {
-        if (!currentNotebook)return;
+        if (!currentNotebook || previewIpt.value.trim() == '')return; 
         let note = {
             tag: tagIpt.value,
             title: titleIpt.value,
@@ -139,6 +151,7 @@ function selectNotebook(index) {
 }
 //=== DELETE NOTEBOOK ===
 function deleteNB(i){
+    if(!confirm('Are you sure about remove the notebook ?'))return;
     notebooks.splice(i,1)
     localStorage.notebooks = JSON.stringify(notebooks);
     showNB();
@@ -163,17 +176,6 @@ function showNotes() {
         </div>
     `).join("");
 }
-//=== ADD NOTE BUTTON ===
-fab.onclick = () => {
-    if (!currentNotebook) {
-        alert("select the notebooks first!");
-        return;
-    }
-
-    overlay.style.display = 'flex';
-    notemodal.style.display = 'flex';
-}
-
 //=== CANCEL ===
 function cancelAll() {
     overlay.style.display = 'none';
