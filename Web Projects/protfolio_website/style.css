@@ -32,3 +32,77 @@ li {
     gap: 4px;
     display: flex;
 }
+.container {
+    color: var(--white);
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: var(--black)
+}
+
+/* header */
+header {
+    margin: 20px auto;
+    background: var(--light_red);
+    border-radius: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+.logo,
+li {
+    transition: .4s;
+}
+
+.logo h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.logo:hover,
+li:hover {
+    rotate: -10deg;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+header img {
+    width: 30px;
+}
+
+header .links {
+    gap: 10px;
+}
+
+.links li {
+    padding: 3px 6px;
+    border-radius: 8px;
+}
+
+li:hover {
+    background: var(--glass);
+}
+
+.bars {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 333333;
+}
+
+.bars span {
+    width: 30px;
+    height: 3px;
+    background: var(--white);
+    transition: .3s;
+}
+
+
+
