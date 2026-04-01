@@ -37,7 +37,7 @@ li {
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    background: var(--black)
+    background: radial-gradient(var(--black),rgb(30, 30, 30));
 }
 
 /* header */
@@ -111,14 +111,16 @@ section {
 }
 
 .home-section,
-.about-section {
+.about-section,
+.contact-section{
     justify-content: center;
     align-items: center;
     gap: 5rem;
 }
 
 .home-content,
-.about-content{
+.about-content,
+.contact-section{
     flex-direction: column;
     gap: 10px;
 
@@ -127,12 +129,13 @@ section {
 }
 
 .home-content span,
-.about-content span{
+.about-content span,
+.contact-section span{
     color: var(--red)
 }
 
 .home-img img,
-.about-img img {
+.about-img img{
     width: 32vw;
 
 }
@@ -333,4 +336,67 @@ button:hover {
 .card button:hover {
     scale: 1.2;
 }
+/* contact section */
+.contact-section {
+    margin-top: 5rem;
+}
 
+.contact-section {
+    gap: 60px;
+    width: 100%;
+}
+
+.contact-section input,
+.textarea {
+    background: var(--black);
+    outline: none;
+    border:none;
+    width:100%;
+    color:var(--white);
+    padding:3px 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin:5px auto;
+}
+
+.contact-section input{
+    height: 40px;
+    
+    
+}
+.textarea{
+    height: 100px;
+}
+form {
+    background: var(--glass);
+    padding:2rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    border: var(--border) solid 2px;
+    border-radius: 14px;
+
+}
+#send-msg{
+    position: relative;
+    overflow: hidden;
+    height:35px;
+}
+.send-icon{
+    position: absolute;
+    bottom:-35px;
+    left:0;
+    width:100%;
+    height:100%;
+    font-size: 30px;
+    color:var(--red);
+    background: var(--white);
+}
+#send-msg:hover .send-icon{
+    bottom:0;
+
+}
+.emails{
+    width: 40vw;
+    rotate:-20deg;
+}
