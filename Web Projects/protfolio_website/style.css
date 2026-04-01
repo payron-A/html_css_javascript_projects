@@ -104,5 +104,114 @@ li:hover {
     transition: .3s;
 }
 
+/* sections */
+section {
+    height: 100vh;
+    padding: 1.5rem;
+}
+
+.home-section {
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.home-content {
+    flex-direction: column;
+    gap: 10px;
+
+    line-height: 25px;
+    width: 500px;
+}
+
+.home-content span {
+    color: var(--red)
+}
+
+.home-img img {
+    width: 32vw;
+
+}
+
+/* home section */
+.home-content {
+    text-align: right;
+}
+
+.home-img img {
+    animation: slowJump 4s Infinite;
+}
+
+@keyframes slowJump {
+    0% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+
+
+}
+
+.btn-group {
+    margin-top: 30px;
+}
+
+button {
+    padding: 5px 20px;
+    color: var(--white);
+    height: 30px;
+    border: 1px solid var(--border);
+    background: var(--red);
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 12px;
+}
+
+.social-icon {
+    margin: auto;
+
+}
+
+.social-icon i {
+    font-size: 23px;
+    margin: 2px 5px;
+    cursor: pointer;
+    fill: var(--red)
+}
+
+.social-icon i:hover {
+    scale: 1.4;
+    color: var(--red);
+    text-shadow: 0 0 8px var(--red),
+        0 0 12px var(--red);
+    translate : 0 -10px;
+}
+
+button.projectBtn {
+    border-radius: 8px;
+    background: transparent;
+    border: solid 2px var(--red);
+    gap: 9px;
+
+}
+button.projectBtn:hover{
+    border:var(--white) solid 2px;
+    color:var(--red)
+}
+button.projectBtn i{
+        margin-left : 4px;
+}
+button:hover {
+    scale: .9;
+}
 
 
