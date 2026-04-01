@@ -110,13 +110,15 @@ section {
     padding: 1.5rem;
 }
 
-.home-section {
+.home-section,
+.about-section {
     justify-content: center;
     align-items: center;
     gap: 5rem;
 }
 
-.home-content {
+.home-content,
+.about-content{
     flex-direction: column;
     gap: 10px;
 
@@ -124,15 +126,16 @@ section {
     width: 500px;
 }
 
-.home-content span {
+.home-content span,
+.about-content span{
     color: var(--red)
 }
 
-.home-img img {
+.home-img img,
+.about-img img {
     width: 32vw;
 
 }
-
 /* home section */
 .home-content {
     text-align: right;
@@ -214,4 +217,12 @@ button:hover {
     scale: .9;
 }
 
+/* about section  */
+.read-btn {
+    width: 200px;
+    border-radius: 8px;
+}
+.hidde-text{
+  display:none;
+}
 
