@@ -1,18 +1,13 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:FF0000,100:000000&height=200&section=header&text=𝖍𝖙𝖒𝖑,𝖈𝖘𝖘,𝖏𝖆𝖛𝖆𝖘𝖈𝖗𝖎𝖕𝖙-𝕻𝖗𝖔𝖏𝖊𝖈𝖙𝖘&fontSize=60&fontColor=000000&animation=twinkling&fontAlignY=35" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:FF0000,100:000000&height=200&section=header&text=𝒥𝓊𝓃𝒾𝑜𝓇.𝒫𝓇𝑜𝒿𝑒𝒸𝓉𝓈&fontSize=60&fontColor=000000&animation=twinkling&fontAlignY=35" />
 </div>
 <br/>
-<br/>
-<div align="center">
-
-# 𝖆𝖑𝖑 𝖍𝖙𝖒𝖑, 𝖈𝖘𝖘 & 𝖏𝖆𝖛𝖆𝖘𝖈𝖗𝖎𝖕𝖙 𝕻𝖗𝖔𝖏𝖊𝖈𝖙𝖘
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png">
 <div align="center">
 </br>
 </br>
   
-## 📊 𝕻𝖗𝖔𝖏𝖊𝖈𝖙 𝕮𝖆𝖙𝖊𝖌𝖔𝖗𝖎𝖊𝖘
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png">
+## 📊 𝒫𝓇𝑜𝒿𝑒𝒸𝓉𝓈 𝒞𝒶𝓉𝑒𝑔𝑜𝓇𝓎
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png"/>
 
 ### 🎨 UI/UX Projects
 Beautiful and modern user interfaces
@@ -25,47 +20,38 @@ Creative CSS & JavaScript animations
 
 ### 📱 Responsive Designs
 Mobile-first responsive layouts
-
 </div>
 
 <br/>
 
-## 📂 𝕻𝖗𝖔𝖏𝖊𝖈𝖙 𝖈𝖔𝖑𝖑𝖊𝖈𝖙𝖎𝖔𝖓
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png">
-This repository contains all my web development projects, from small experiments to complete applications, built with pure HTML, CSS, and JavaScript.
-
-</div>
-
-<br/>
 
 <div align="center">
+  
+  ## 📂 𝒫𝓇𝑜𝒿𝑒𝒸𝓉𝓈 𝒞𝑜𝓁𝓁𝑒𝒸𝓉𝒾𝑜𝓃
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png"/>
+
+This repository contains all my web development projects, from small experiments to complete applications.
+</div>
+
+<br/>
 
 | Project Name | Description | Technologies | Live Demo |
 |-------------|-------------|--------------|-----------|
-| 🎨 **Portfolio Website** | Personal portfolio showcasing my work | HTML, CSS, JS | [View](link) |
-| 🎮 **Game Project** | Interactive browser game | HTML, CSS, JS | [View](link) |
-| 📱 **Responsive Dashboard** | Modern admin dashboard | HTML, CSS, JS | [View](link) |
-| 🌐 **Landing Page** | Product landing page | HTML, CSS, JS | [View](link) |
-| 💼 **Business Website** | Corporate website template | HTML, CSS, JS | [View]([link](https://js-cruds-prject.onrender.com)) |
-| 🎯 **Todo App** | Task management application | HTML, CSS, JS | [View](link) |
-| 🖼️ **Image Gallery** | Responsive image gallery | HTML, CSS, JS | [View](link) |
-| 📝 **Blog Template** | Clean blog layout | HTML, CSS, JS | [View](link) |
-| ⏰ **Clock Widget** | Animated digital clock | HTML, CSS, JS | [View](link) |
-| 🎵 **Music Player** | Custom audio player | HTML, CSS, JS | [View](link) |
-
-</div>
+| 🎨 **Portfolio Website** | Personal portfolio showcasing my work | HTML, CSS, JS, React | [View](https://payron.vercel.app/) |
+| 🎮 **Tic Tac Toe** | Interactive browser game | HTML, CSS, JS,| [View](https://tic-tac-toe-game-6b4y.onrender.com/) |
+| 📱 **Responsive Dashboard** | Modern admin dashboard | HTML, CSS, JS | [View](https://js-cruds-prject.onrender.com) |
+| 🌐 **Landing Page** | Product landing page | HTML, CSS, JS | [comming soon]() |
+| 💼 **Dashboard** | Corporate website template | HTML, CSS, JS | [View](https://js-cruds-prject.onrender.com) |
+| 🎯 **Todo App** | Task management application | HTML, CSS, JS | [comming soon]() |
+| 🖼️ **Sole & Stip** | Responsive image gallery | HTML, CSS, JS, React | [View](https://sole-step.vercel.app/) |
+| 📝 **NoteBooks** | Clean blog layout | HTML, CSS, JS | [View](https://notekeeper-bady.onrender.com/) |
 
 <br/>
-</div>
-<br/>
-<br/>
-<br/>
+
 <div align="center">
-
-
   
-## ✒️ 𝖓𝖔𝖙𝖊𝖘
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png">
+## ✒️ 𝒩𝑜𝓉𝑒𝓈
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png"/>
 
 
 - Some projects here may later be moved  
@@ -79,8 +65,4 @@ This repository contains all my web development projects, from small experiments
 
 <br/>
 
-<br/>
 
-<div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:FF0000,100:000000&height=220&section=footer&text=♟️&fontSize=90&fontColor=000000&animation=twinkling&fontAlignY=65" />
-</div>
